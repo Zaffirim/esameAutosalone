@@ -1,0 +1,27 @@
+
+<div class="container d-flex gap-5 justify-content-center">
+    <div class="row">
+        <div class="col-12" *ngFor="let car of cars;">
+            <div class="card {{car.available ? 'bg-success':'bg-danger'}}">
+                <img
+                src="https://www.kimballstock.com/pix/car/p/{{
+                    car.modelImage
+                }}"
+                class="card-img-top"
+                alt="..."
+            />
+            <div class="card-body">
+                <h5 class="card-title">{{ car.model }}</h5>
+                <div class="row">
+                    <div class="col-4">Anno {{ car.year }}</div>
+                    <div class="col-4">prezzo {{ car.price }}</div>
+                    <div class="col-4">
+                        pronta consegna: {{ car.available ? "si" : "no" }}
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
