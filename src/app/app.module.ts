@@ -7,6 +7,7 @@ import { AudiComponent } from './audi/audi.component';
 import { FordComponent } from './ford/ford.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Route[] = [
@@ -35,7 +36,8 @@ const routes: Route[] = [
     AudiComponent,
     FordComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
